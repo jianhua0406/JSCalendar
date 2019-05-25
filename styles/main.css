@@ -1,0 +1,160 @@
+#wrap {
+	margin-top: 200px;
+}
+#select {
+	width: 410px;
+	margin: 0 auto;
+	text-align: center;
+	padding: 0 0 10px 0;
+}
+#select:after {
+	content: '.';
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+#select #list {
+	float: left;
+}
+#select #today {
+	float: right;
+	line-height: 20px;
+}
+#select #today:hover {
+	color: #fff;
+	background: #5af;
+	transition: background 0.5s;
+}
+#select .nav-common {
+	position: relative;
+	display: inline-block;
+	width: 90px;
+	height: 20px;
+	border: 2px #5af solid;
+	color: #5af;
+}
+#select .nav-common:hover {
+	border: 2px #5af solid;
+	cursor: pointer;
+}
+#select .nav-common .show {
+	line-height: 20px;
+}
+#select .nav-common .show:first-child {
+	margin-left: -15px;
+}
+#select .nav-common .show div {
+	display: inline;
+}
+#select .nav-common .arrow {
+	position: absolute;
+	top: 0;
+	display: block;
+	padding: 0 3px;
+	color: #fff;
+	height: 20px;
+	line-height: 20px;
+	background: #5af;
+}
+#select .nav-common .down {
+  right: 2px;
+	color: #5af;
+  background: #fff;
+}
+#select .nav-common .left {
+	left: 0;
+}
+#select .nav-common .right {
+	right: 0;
+}
+#select .nav-common .left:hover,
+#select .nav-common .right:hover {
+	background: #5ae;
+	cursor: pointer;
+}
+
+/*下拉列表*/
+ul, li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+ul {
+	position: absolute;
+	top: 22px;
+	left: -2px;
+	z-index: 10;
+	width: 90px;
+	height: 0px;
+	border: 2px #5af solid;
+	border-top: 0;
+	border-bottom: 0;
+	overflow: scroll;
+	background: #fff;
+}
+ul li {
+	padding: 5px 0;
+}
+ul li:hover {
+	background: #5af;
+	color: #fff;
+}
+/* 选中状态 */
+ul #year-selected,
+ul #month-selected {
+	background: #5af;
+	color: #fff;
+}
+ul li div {
+	display: inline;
+}
+#select .nav-common:hover ul {
+	height: 274px;
+	border-bottom: 2px #5af solid;
+	transition: height 0.6s ;
+}
+
+table {
+	margin: 0 auto;
+	border-collapse: collapse;
+	border: 2px #5af solid;
+}
+tr {
+	border-bottom: 2px #5af solid;
+}
+tr:first-child {
+	border-bottom: 0;
+	color: #fff;
+}
+td {
+	position: relative;
+	padding: 20px;
+	opacity: 1;
+	color: #aaa;
+	text-align: center;
+}
+td:hover {
+	cursor: pointer;
+	color: #fff;
+	background: #fb0;
+}
+/* 选中状态 */
+#day-selected {
+	color: #fff;
+	background: #fb0;
+}
+.holiday {
+	color: red;
+}
+tr:first-child > td {
+	padding: 8px 20px;
+	background: #5af;
+	border-radius: 0;
+	color: #fff;
+}
+tr:first-child > td:hover {
+	cursor: inherit;
+}
+
+

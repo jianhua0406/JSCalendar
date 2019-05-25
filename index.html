@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calendar</title>
+    <link rel="stylesheet" href="styles/iconfont/iconfont.css">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="select">
+            <div id="list">
+                <div class="nav-common">
+                    <div class="show">
+                        <div id="year">1994</div>
+                        <span>年</span>
+                    </div>
+                    <span class="down arrow iconfont">&#xe601;</span>
+                    <ul id="year-list"></ul>
+                </div>
+                <div class="nav-common">
+                    <span id="prev" class="left arrow iconfont">&#xe603;</span>
+                    <div class="show">
+                        <div id="month">8</div>
+                        <span>月</span>
+                    </div>
+                    <ul id="month-list"></ul>
+                    <span id="next" class="right arrow iconfont">&#xe602;</span>
+                </div>
+            </div>
+            <div id="today" class="nav-common">返回今天</div>
+        </div>
+        <table>
+            <tbody id="table">
+                <tr>
+                    <td>日</td>
+                    <td>一</td>
+                    <td>二</td>
+                    <td>三</td>
+                    <td>四</td>
+                    <td>五</td>
+                    <td>六</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="scripts/calendar.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
